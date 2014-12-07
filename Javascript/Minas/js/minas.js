@@ -12,13 +12,11 @@ function ganas()
 var campo=[	[1,0,0],[0,1,0],[1,1,1]	];
 var texto=["cesped","bomba"];
 
-alert("Estas en un campo minado \n"+
-		"Selecciona una posición entre el 0 y 2 para X y para Y");
+//alert("Estas en un campo minado \n"+"Selecciona una parte del cesped");
 
-var x = prompt("Selecciona una posición para X (entre 0 y 2)");
-var y = prompt("Selecciona una posición para Y (entre 0 y 2)");
-
-
+document.getElementByClassName('cuadricula').addEventListener("click", function(){
+	alert("seleccione uno");
+});
 
 if (x<3 && y<3)
 {
